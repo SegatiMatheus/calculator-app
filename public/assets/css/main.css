@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--background: #000025;
+	--foreground: #f9f9f9;
+	--card: #08080a;
+	--card-foreground: #f9f9f9;
+	--popover: #08080a;
+	--popover-foreground: #f9f9f9;
+	--primary: #f9f9f9;
+	--primary-foreground: #17171b;
+	--secondary: #27272a;
+	--secondary-foreground: #f9f9f9;
+	--muted: #27272a;
+	--muted-foreground: #a1a1a9;
+	--accent: #27272a;
+	--accent-foreground: #f9f9f9;
+	--destructive: #7f1d1d;
+	--destructive-foreground: #f9f9f9;
+	--border: #27272a;
+	--input: #27272a;
+	--ring: #d3d3d7;
+
+	--primary-brand: #003c81;
+	--primary-brand-opacity: #003c8180;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: var(--background);
+	color: var(--background);
+}
+
+.transition-colors {
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	transition-duration: .15s;
+}
+
+.transition-opacity {
+	transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.form-group .form-label {
+	font-size: 14px;
+	color: var(--accent);
+}
+
+.form-group .form-control {
+    border: 1px solid transparent;
+	font-size: 14px;
+	background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+}
+
+.form-group .form-control:focus {
+    border: 1px solid transparent;
+    box-shadow: none !important;
+}
+
+.img-filter {
+    filter: brightness(0.5);
+}
+
+.card-login {
+	background-color: var(--foreground);
+	width: 400px;
+	max-width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.btn-primary {
+	font-size: 14px;
+}

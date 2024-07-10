@@ -23,6 +23,6 @@ Route::middleware([CheckLoggedUser::class])->group(function () {
 Route::middleware([CheckLoggedOutUser::class])->group(function () {
     Route::get('/', [PublicController::class, 'index'])->name('index');
 
-    Route::addRoute(['GET', 'POST'], '/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/login', [LoginController::class, 'login'])->name('login');
     Route::addRoute(['GET', 'POST'], '/register', [RegisterService::class, 'register'])->name('register');
 });

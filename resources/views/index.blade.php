@@ -47,8 +47,8 @@
                                             <input type="email" class="form-control" name="email" required>
                                         </div>
                                         <div class="form-group mb-3">
-                                            <label for="Senha" class="form-label">Senha</label>
-                                            <input type="password" class="form-control" name="Senha" required>
+                                            <label for="senha" class="form-label">Senha</label>
+                                            <input type="password" class="form-control" name="senha" required>
                                         </div>
                                         <div class="d-flex justify-center">
                                             <button type="submit" class="btn btn-primary w-100">Cadastrar</button>

@@ -8,7 +8,6 @@ jQuery(function($){
             confirmButtonText: 'OK'
         }).then((result) => {
             if (result.isConfirmed) {
-                console.log(returnSuccess.redirect);
                 if (returnSuccess.redirect != undefined) {
                     window.location.href = returnSuccess.redirect;
                 } else {
@@ -20,11 +19,16 @@ jQuery(function($){
 
     function showError(returnError){
         console.log(returnError);
+
         let mensagemErroText = '';
 
-        $.each(returnError, function(i, item){
-            mensagemErroText += '<p>'+item+'</p>';
-        });
+        if (typeof returnError != 'string') {
+            $.each(returnError, function(i, item){
+                mensagemErroText += '<p>'+item+'</p>';
+            });
+        } else {
+            mensagemErroText = returnError;
+        }       
 
         Swal.fire({
             title: 'Erro!',
@@ -47,6 +51,7 @@ jQuery(function($){
             url: url,
             data: data,
             success: function(response) {
+                console.log(response);
                 showSuccess(response);
             },
             error: function(response) {

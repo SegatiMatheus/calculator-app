@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
 
-    protected ?LoginService $service;
+    protected LoginService $service;
+    public function __construct()
+    {
+        $this->service = new LoginService();
+    }
 
     public function login(Request $request)
     {
-        if ($request->isMethod('POST')) {
-            return $this->service->login($request);
-        }
-
-        return abort(404);
+        return $this->service->login($request->user, $request->password);
     }
 }

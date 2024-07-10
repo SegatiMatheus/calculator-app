@@ -28,22 +28,25 @@ class LoginService
         Session::put('user_name', $user->name);
     }
 
-    public function login($request)
+    public function login($user, $password)
     {
-        $user = $this->getUser($request->user, $request->password);
-        if (!$user) {return null;}
+        $user = $this->getUser($user, $password);
+        if (!$user) {
+            return response()->json(['error' => 'Usuário ou senha inválidos.'], 401);
+        }
 
         Auth::loginUsingId($user->id, true);
         $this->loadSessionWeb($user);
 
-        return $user;
+        return response()->json([
+            'success'  => 'Logado com sucesso!.',
+            'redirect' => route('home'),
+        ], 200);
     }
 
     public function logout()
     {
         Auth::logout();
         Session::flush();
-
-        return redirect()->route('index');
     }
 }

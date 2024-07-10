@@ -25,7 +25,7 @@ class RegisterService
             $validator = Validator::make($request->all(), [
                 'nome'  => 'required|string|max:255',
                 'email' => 'required|string|email|max:255|unique:users',
-                'Senha' => 'required|string|min:8',
+                'senha' => 'required|string|min:8',
             ]);
             if ($validator->fails()) {
                 return response()->json(['error' => $validator->errors()], 400);

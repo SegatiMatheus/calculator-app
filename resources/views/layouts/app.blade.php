@@ -20,10 +20,21 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="{{ asset('assets/js/ajax.js') }}"></script>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4305420001332167"
-     crossorigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4305420001332167" crossorigin="anonymous"></script>
     </head>
     <body>
-        @yield('content')
+        @if ($logged)
+            <div class="d-flex">
+                @include('layouts.sidebar')
+                <div class="background-app">
+                    @yield('content')
+                </div>
+            </div>
+        @else
+            @yield('content')
+        @endif
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>lucide.createIcons();</script>
     </body>
 </html>

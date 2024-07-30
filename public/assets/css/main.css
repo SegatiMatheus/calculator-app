@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-	--background: #000025;
+	--background: #FFF;
 	--foreground: #f9f9f9;
 	--card: #08080a;
 	--card-foreground: #f9f9f9;
@@ -28,19 +28,14 @@
 body {
 	font-family: "Inter", sans-serif;
 	background-color: var(--background);
-	color: var(--background);
+	color: var(--primary-foreground);
 }
 
-.transition-colors {
-	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-	transition-duration: .15s;
-}
-
-.transition-opacity {
-	transition-property: opacity;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s;
+.background-app {
+	min-height: 100vh;
+	width: calc(100%);
+	padding: 20px;
+	background-color: var(--card-foreground);
 }
 
 .form-group .form-label {
@@ -59,12 +54,7 @@ body {
     box-shadow: none !important;
 }
 
-.img-filter {
-    filter: brightness(0.5);
-}
-
 .card-login {
-	background-color: var(--foreground);
 	width: 400px;
 	max-width: 100%;
 	padding: 20px;
@@ -72,5 +62,47 @@ body {
 }
 
 .btn-primary {
-	font-size: 14px;
+	background-color: var(--primary-foreground);
+	border-color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+	background-color: var(--muted);
+	border-color: var(--muted);
+}
+
+.form-group .form-control { 
+	background-color: transparent !important;
+	border-bottom: 1px solid var(--primary-foreground) !important;
+	border-radius: 0;
+}
+
+.nav-pills .nav-link {
+	background-color: transparent !important;
+	color: var(--primary-foreground);
+	border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+	color: var(--primary-foreground);
+	border-bottom: 1px solid var(--primary-foreground);
+}
+
+.btn-add {
+	background-color: var(--card);
+	color: var(--background);
+	border-radius: 50%;
+}
+
+.btn-add:hover, .btn-add:focus {
+	background-color: var(--muted);
+}
+
+.btn-add svg {
+	stroke: var(--background);
+}
+
+.sidebar {
+	width: 120px;
+	height: 100vh;
 }

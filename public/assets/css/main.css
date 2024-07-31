@@ -21,6 +21,11 @@
 	--input: #27272a;
 	--ring: #d3d3d7;
 
+	--blue: #2196F3;
+	--green: #4CAF50;
+	--red: #F44336;
+	--green-dark: #00796B;
+
 	--primary-brand: #003c81;
 	--primary-brand-opacity: #003c8180;
 }
@@ -38,12 +43,45 @@ body {
 	background-color: var(--card-foreground);
 }
 
+.blue {
+	color: var(--blue);
+}
+
+.bg-blue {
+	background-color: var(--blue);
+}
+
+.green {
+	color: var(--green);
+}
+
+.bg-green {
+	background-color: var(--green);
+}
+
+.red {
+	color: var(--red);
+}
+
+.bg-red {
+	background-color: var(--red);
+}
+
+.greem-dark {
+	color: var(--green-dark);
+}
+
+.bg-green-dark {
+	background-color:  var(--green-dark);
+}
+
 .form-group .form-label {
 	font-size: 14px;
 	color: var(--accent);
 }
 
-.form-group .form-control {
+.form-group .form-control
+.input-group .form-control {
     border: 1px solid transparent;
 	font-size: 14px;
 	background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
@@ -105,4 +143,21 @@ body {
 .sidebar {
 	width: 120px;
 	height: 100vh;
+}
+
+.dropend .dropdown-toggle::after {
+	display: none !important;
+}
+
+.dropend .dropdown-menu.dropdpwn-new-financial {
+	padding: 20px;
+}
+
+.dropend .dropdown-menu.dropdpwn-new-financial.show {
+	transform: translate(61px, -25px) !important;
+	width: 230px;
+}
+
+.dropdpwn-new-financial button:hover {
+	background-color: var(--muted-foreground);
 }

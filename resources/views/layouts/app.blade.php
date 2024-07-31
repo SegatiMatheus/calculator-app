@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Financial</title>
+        <link rel="shortcut icon" href="{{ asset('assets/img/logo-small.svg') }}" type="image/x-icon">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -23,7 +24,7 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4305420001332167" crossorigin="anonymous"></script>
     </head>
     <body>
-        @if ($logged)
+        @if (Auth::check())
             <div class="d-flex">
                 @include('layouts.sidebar')
                 <div class="background-app">

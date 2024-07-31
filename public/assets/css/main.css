@@ -82,9 +82,27 @@ body {
 
 .form-group .form-control
 .input-group .form-control {
-    border: 1px solid transparent;
+	border: 1px solid transparent;
 	font-size: 14px;
-	background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+	background-color: transparent !important;
+}
+
+.input-group>.form-control, .input-group>.form-select, .input-group>.form-floating {
+	border: 1px solid transparent;
+	font-size: 14px;
+	background-color: transparent !important;
+	border-bottom: 1px solid var(--muted-foreground) !important;
+}
+
+.input-group>.form-control:focus {
+	box-shadow: none !important;
+}
+
+.input-group .input-group-text {
+	background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--muted-foreground) !important;
 }
 
 .form-group .form-control:focus {
@@ -111,7 +129,7 @@ body {
 
 .form-group .form-control { 
 	background-color: transparent !important;
-	border-bottom: 1px solid var(--primary-foreground) !important;
+	border-bottom: 1px solid var(--muted-foreground) !important;
 	border-radius: 0;
 }
 
@@ -150,7 +168,7 @@ body {
 }
 
 .dropend .dropdown-menu.dropdpwn-new-financial {
-	padding: 20px;
+	padding: 10px 20px;
 }
 
 .dropend .dropdown-menu.dropdpwn-new-financial.show {
@@ -159,5 +177,15 @@ body {
 }
 
 .dropdpwn-new-financial button:hover {
-	background-color: var(--muted-foreground);
+	background-color: var(--card);
+	color: var(--accent-foreground);
+}
+
+.lista .item-lista {
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.lista .item-lista.active {
+	background-color: var(--card);
 }

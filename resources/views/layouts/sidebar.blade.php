@@ -1,8 +1,9 @@
+
 <section>
     <div class="sidebar padding20 d-flex flex-column align-items-center">
         <img src="{{ asset('assets/img/logo-small.svg') }}" alt="">
 
-        <div class="margint30">
+        <div class="margint30 d-flex flex-column align-items-center justify-content-center">
             <div class="btn-group dropend">
                 <button type="button" class="btn btn-add dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus"><circle cx="12" cy="12" r="10" /><path d="M8 12h8" /><path d="M12 8v8" /></svg>
@@ -43,51 +44,51 @@
                 </ul>
             </div>
 
-            <ul class="d-flex flex-column align-items-center gap-5"
+            <ul class="d-flex flex-column align-items-center gap-4 lista"
                 style="list-style: none; padding: 0px; margin: 0px; margin-top: 30px">
-                <li>
+                <li class="item-lista {{ $pagina == 'dashboard' ? 'active' : '' }}">
                     <a href="">
                         <i data-lucide="layout-dashboard" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="castle" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="list" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="credit-card" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="flag" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="clock" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="ellipsis" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
                     </a>
                 </li>
-                <li>
+                <li class="item-lista">
                     <a href="">
                         <i data-lucide="settings" stroke="#a1a1a9"></i>
                         {{-- <p class="t-link f-size-14">Dashboard</p> --}}
@@ -107,8 +108,8 @@
             </div>
             <div class="modal-body">
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="valor"><i data-lucide="calculator" stroke="#F44336"></i></span>
-                    <input type="text" class="form-control" placeholder="Valor da Despesa" aria-label="Valor da Despesa" aria-describedby="valor">
+                    <span class="input-group-text" id="valor"><i data-lucide="calculator" stroke="#A1A1A9"></i></span>
+                    <input type="text" class="form-control maskMoney" placeholder="Valor da Despesa" aria-label="Valor da Despesa" aria-describedby="valor">
                 </div>
             </div>
             <div class="modal-footer">

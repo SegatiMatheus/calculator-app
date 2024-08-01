@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="row margint20">
-            <div class="col-3">
+            <div class="col-12">
                 <div class="card rounded-4">
                     <div class="d-flex justify-content-between align-items-center padding20 w-100">
                         <div>
@@ -27,41 +27,69 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row margint20">
             <div class="col-3">
-                <div class="card rounded-4">
-                    <div class="d-flex justify-content-between align-items-center padding20 w-100">
-                        <div>
-                            <p class="f-size-16">Receitas</p>
-                            <p class="f-size-20 bold">R$ 0,00</p>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card rounded-4">
+                            <div class="d-flex justify-content-between align-items-center padding20 w-100">
+                                <div>
+                                    <p class="f-size-16">Receitas</p>
+                                    <p class="f-size-20 bold">R$ 0,00</p>
+                                </div>
+                                <div class="rounded-circle bg-green padding10 d-flex align-items-center justify-content-center">
+                                    <i data-lucide="arrow-up" stroke="#FFF"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="rounded-circle bg-green padding10 d-flex align-items-center justify-content-center">
-                            <i data-lucide="arrow-up" stroke="#FFF"></i>
+                    </div>
+                </div>
+                <div class="row margint20">
+                    <div class="col-12">
+                        <div class="card rounded-4">
+                            <div class="d-flex justify-content-between align-items-center padding20 w-100">
+                                <div>
+                                    <p class="f-size-16">Investimentos</p>
+                                    <p class="f-size-20 bold">R$ 0,00</p>
+                                </div>
+                                <div class="rounded-circle bg-yellow padding10 d-flex align-items-center justify-content-center">
+                                    <i data-lucide="chart-line" stroke="#FFF"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-6"></div>
             <div class="col-3">
-                <div class="card rounded-4">
-                    <div class="d-flex justify-content-between align-items-center padding20 w-100">
-                        <div>
-                            <p class="f-size-16">Despesas</p>
-                            <p class="f-size-20 bold">R$ 0,00</p>
-                        </div>
-                        <div class="rounded-circle bg-red padding10 d-flex align-items-center justify-content-center">
-                            <i data-lucide="arrow-down" stroke="#FFF"></i>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card rounded-4">
+                            <div class="d-flex justify-content-between align-items-center padding20 w-100">
+                                <div>
+                                    <p class="f-size-16">Despesas</p>
+                                    <p class="f-size-20 bold">R$ 0,00</p>
+                                </div>
+                                <div class="rounded-circle bg-red padding10 d-flex align-items-center justify-content-center">
+                                    <i data-lucide="arrow-down" stroke="#FFF"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card rounded-4">
-                    <div class="d-flex justify-content-between align-items-center padding20 w-100">
-                        <div>
-                            <p class="f-size-16">Cartão de Crédito</p>
-                            <p class="f-size-20 bold">R$ 0,00</p>
-                        </div>
-                        <div class="rounded-circle bg-green-dark padding10 d-flex align-items-center justify-content-center">
-                            <i data-lucide="credit-card" stroke="#FFF"></i>
+                <div class="row margint20">
+                    <div class="col-12">
+                        <div class="card rounded-4">
+                            <div class="d-flex justify-content-between align-items-center padding20 w-100">
+                                <div>
+                                    <p class="f-size-16">Cartão de Crédito</p>
+                                    <p class="f-size-20 bold">R$ 0,00</p>
+                                </div>
+                                <div class="rounded-circle bg-green-dark padding10 d-flex align-items-center justify-content-center">
+                                    <i data-lucide="credit-card" stroke="#FFF"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

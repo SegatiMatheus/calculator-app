@@ -111,6 +111,17 @@
                     <span class="input-group-text" id="valor"><i data-lucide="calculator" stroke="#A1A1A9"></i></span>
                     <input type="text" class="form-control maskMoney" placeholder="Valor da Despesa" aria-label="Valor da Despesa" aria-describedby="valor">
                 </div>
+                <div style="padding: 0.375rem 0.75rem;">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                            <i data-lucide="circle-check-big" stroke="#a1a1a9"></i>
+                            <p class="f-size-14 paid gray">Não foi paga</p>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="paid">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary">Salvar e criar nova</button>
@@ -119,3 +130,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('input[name="paid"]').on('change', function() {
+            if ($(this).is(':checked')) {
+                $(this).parent().parent().prev().find('i').attr('data-lucide', 'circle-check-big');
+                $('.paid').text('Foi paga');
+            } else {
+                $(this).parent().parent().prev().find('i').attr('data-lucide', 'circle-check-big-outline');
+                $('.paid').text('Não foi paga');
+            }
+        });
+    });
+</script>

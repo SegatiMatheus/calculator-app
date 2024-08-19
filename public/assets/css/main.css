@@ -209,3 +209,21 @@ body {
 .form-check-input:focus {
 	box-shadow: none !important;
 }
+
+.border-muted {
+	border-bottom: 1px solid var(--muted-foreground);
+}
+
+.day-expense {
+	cursor: pointer;
+}
+
+.day-expense.active {
+	background-color: var(--card);
+	color: var(--secondary-foreground);
+}
+
+.form-check-input:checked {
+	background-color: var(--card) !important;
+	border-color: var(--card) !important;
+}

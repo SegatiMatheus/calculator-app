@@ -111,7 +111,7 @@
                     <span class="input-group-text" id="valor"><i data-lucide="calculator" stroke="#A1A1A9"></i></span>
                     <input type="text" class="form-control maskMoney" placeholder="Valor da Despesa" aria-label="Valor da Despesa" aria-describedby="valor">
                 </div>
-                <div style="padding: 0.375rem 0.75rem;">
+                <div style="padding: 0.375rem 0.75rem;" class="mb-3">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex gap-2">
                             <i data-lucide="circle-check-big" stroke="#a1a1a9"></i>
@@ -121,6 +121,20 @@
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="paid">
                         </div>
                     </div>
+                </div>
+                <div  style="padding: 0.375rem 0.75rem;" class="border-1-b border-muted">
+                    <div class="d-flex gap-3">
+                        <i data-lucide="calendar" stroke="#a1a1a9"></i>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="paddingt4 paddingb4 paddingl8 paddingr8 bg-gray rounded-5 f-size-12 day-expense active">Hoje</p>
+                            <p class="paddingt4 paddingb4 paddingl8 paddingr8 bg-gray rounded-5 f-size-12 day-expense">Ontem</p>
+                            <p class="paddingt4 paddingb4 paddingl8 paddingr8 bg-gray rounded-5 f-size-12 day-expense">Outros...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="description"><i data-lucide="file-text" stroke="#A1A1A9"></i></span>
+                    <input type="text" class="form-control maskMoney" placeholder="Descrição" aria-label="Descrição" aria-describedby="description">
                 </div>
             </div>
             <div class="modal-footer">
